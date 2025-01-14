@@ -1,0 +1,3 @@
+#Ignorando carpeta y archivo "privada" y "privado", sólo deben estar separaods por el salto de línea para que los reconozca como diferentes
+privada
+privado.txt
