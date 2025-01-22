@@ -8,6 +8,9 @@
 |	Brais Moure	|	[Enlace  a github 2](https://github.com/mouredev/hello-git)	|
 |	Rey R.	|	[Enlace  a github 3](https://github.com/ReyRomano/masteruah)	|
 
+----
+----
+
 ### -- Pasos para resolver "Ejercicios básicos de Git, GitHub y Markdown - https://github.com/asanzdiego/curso-git-github-markdown-2017/blob/master/ejercicios/git-github-markdown-ejercicios-01-basico.md": --
 
 ## Repositorio masteruah
@@ -17,6 +20,7 @@
 		Se hace de maner gráfica en github
 
 - OK. Resp oficial, R=
+
 		En el menú de GitHub > Pulsar en el icono “+” > Pinchar en “New repository”
 
 - Clonar vuestro repositio en local.
@@ -153,4 +157,5 @@ la carpeta sean ignorados por git.
 		Se hace manualmente desde repositorio de git
 
 - OK. Resp oficial, R=
+
 		Ir a http://github.com/usuario/masteruah > Pinchar en "Settings" > Pinchar en "Collaborators"
