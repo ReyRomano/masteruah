@@ -159,3 +159,89 @@ la carpeta sean ignorados por git.
 - OK. Resp oficial, R=
 
 		Ir a http://github.com/usuario/masteruah > Pinchar en "Settings" > Pinchar en "Collaborators"
+
+----
+----
+
+### -- Pasos para resolver "Ejercicios avanzados de Git, GitHub y Markdown - https://github.com/asanzdiego/curso-git-github-markdown-2017/blob/master/ejercicios/git-github-markdown-ejercicios-02-avanzado.md": --
+
+## Notas
+
+- Este ejercicio es continuación del anterior por lo que tendréis que seguir trabajando en el repositorio **masteruah**.
+
+- También tendreís que ir poniendo los **comandos** que habéis tenido que utilizar durante todos los ejercicios y las **explicaciones y capturas de pantalla** que consideréis **necesarias** al fichero README.md del citado repositorio.
+
+## Crear una rama v0.2
+
+- Crear una rama **v0.2**.
+
+- Posiciona tu carpeta de trabajo en esta rama.
+
+		git checkout -b v0.2	//Este comando crea rama y te posiciona en ella al mismo tiempo
+
+## Añadir fichero 2.txt
+
+- Añadir un fichero **2.txt** en la rama **v0.2**.
+
+		Esto se hace manualmente
+
+## Crear rama remota v0.2
+
+- Subir los cambios al reposiorio remoto.
+
+		git add .
+		git commit -m "Creando rama remota v0.2"
+		git push -u origin v0.2
+
+## Merge directo
+
+- Posicionarse en la rama **master**.
+
+		git checkout "id de último commit de rama main"
+
+- Hacer un merge de la rama **v0.2** en la rama **master**.
+
+		git merge v0.2
+
+## Merge con conflicto
+
+- En la rama **master** poner **Hola** en el fichero **1.txt** y hacer commit.
+
+		switch main
+
+		Escribir manualmete Hola en fichero.
+
+		git status
+		git add 1.txt
+		git status
+		git commit -m "Iniciando conflicto con -Hola- en 1.txt"
+		git status
+		git tree
+
+- Posicionarse en la rama **v0.2** y poner **Adios** en el fichero "1.txt" y hacer commit.
+
+		git switch v0.2
+		Escribir manualmete Adios en fichero.
+
+		git status
+		git add 1.txt
+		git status
+		git commit -m "Continuando conflicto con -Adiós- en 1.txt"
+		git status
+		git tree
+
+- Posicionarse de nuevo en la rama **master** y hacer un merge con la rama **v0.2**
+
+		git switch main
+		git merge v0.2
+
+## Listado de ramas
+
+- Listar las ramas con merge y las ramas sin merge.
+
+		git branch
+		git branch -av
+
+## Arreglar conflicto
+
+- Arreglar el conflicto anterior y hacer un commit.

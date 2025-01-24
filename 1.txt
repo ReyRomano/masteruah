@@ -1,1 +1,3 @@
-Hola
+El conflicto resuelto queda:
+
+Hola y Adiós
