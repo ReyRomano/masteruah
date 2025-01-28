@@ -245,3 +245,31 @@ la carpeta sean ignorados por git.
 ## Arreglar conflicto
 
 - Arreglar el conflicto anterior y hacer un commit.
+
+		En 1.txt, el conflicto resuelto queda:
+			Hola y Adiós
+
+		git status
+		git add .
+		git status
+		git commit -m "Resuelto conflicto con Hola y adiós en 1.txt"
+
+		Al resolver  el conflicto y hacer el commit, en automático se mergea lo que marcaba error
+
+		git status
+		git tree
+
+## Borrar rama
+
+- Crear un tag v0.2
+
+		git tag		//ver todos los tags
+		git tag v0.2
+
+		git tree
+		git tag
+
+- Borrar la rama v0.2
+
+		
+
