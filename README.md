@@ -150,7 +150,7 @@ la carpeta sean ignorados por git.
 		|	Nombre del compañero 2	|	[Enlace  a github 2](https://github.com/mouredev/hello-git)	|
 		|	Nombre del compañero 3	|	[Enlace  a github 3](https://github.com/ReyRomano/masteruah)	|
 
-##Colaboradores
+## Colaboradores
 
 - Poner a [github.com/asanzdiego](https://github.com/asanzdiego) como colaborador del repositorio **masteruah**
 
@@ -254,7 +254,7 @@ la carpeta sean ignorados por git.
 		git status
 		git commit -m "Resuelto conflicto con Hola y adiós en 1.txt"
 
-		Al resolver  el conflicto y hacer el commit, en automático se mergea lo que marcaba error
+		Al resolver  el conflicto y hacer el commit, en automático se mergea lo que marcaba error.
 
 		git status
 		git tree
@@ -271,5 +271,80 @@ la carpeta sean ignorados por git.
 
 - Borrar la rama v0.2
 
-		
+		git branch
+		git branch -d v0.2
 
+		Al hacer git switch v0.2 me inidcará que es una referencia inválida.
+
+## Listado de cambios
+
+- Listar los distintos commits con sus ramas y sus tags.
+
+		git tree
+
+## Crear una organización
+
+- Crear una organización llamada masteruah-tunombredeusuariodegithub
+
+		Se hace manualmente
+
+## Crear equipos
+
+- Crear 2 equipos en la organización masteruah-tunombredeusuariodegithub, uno llamado administradores con más permisos y otro colaboradores con menos permisos.
+
+		Se hace manualmente dentro de "masteruah-tunombredeusuariodegithub", en la pestaña de "Teams"
+
+- Meter a github.com/asanzdiego y a 2 de vuestros compañeros de clase en el equipo administradores.
+
+		Se hace manualmente
+
+- Meter a github.com/asanzdiego y a otros 2 de vuestros compañeros de clase en el equipo colaboradores.
+
+		Se hace manualmente
+
+## Crear un index.html
+
+- Crear un index.html que se pueda ver como página web en la organización.
+
+		Se hace manualmente.
+
+## Crear pull requests
+
+- Hacer 2 forks de 2 repositorios masteruah-tunombredeusuariodegithub.github.io de 2 organizaciones de las que no seais ni administradiores ni colaboradores.
+
+		Se hace manualmente.
+
+- Crearos una rama en cada fork.
+
+		Se hace manualmente desde git hub, uno de forma gráfica OK.
+		- Y otro desde terminal.
+		- Se hace fork de repositorio(graficamente)
+		Se hace en la terminal:
+		- Se clona éste repositrio " git clone 'url_proyec' "
+		- En terminal, entrar a carpeta que acabo de clonar, después:
+			- git checkout -b rey-rom	// -b: Es equivalente a ejecutar dos comandos: uno para crear la rama y otro para cambiarte a ella.
+			- git branch -av 	// P´/ver que rama se creó correctamente. git branch solo muestra las ramas locales. -a(all), también incluye las ramas remotas referenciadas en el repositorio. -v: Muestra información adicional sobre las ramas, como el último commit en cada una. Esto te permite ver el hash del último commit y el mensaje asociado a él.		
+
+- En cada rama modificar el fichero index.html añadiendo vuestro nombre.
+
+		Ésto se hace manualmente.
+		- Se hacen los cambios de forma manual en index.html
+		- git status
+		- git add index.html
+		- git status
+		- git commit -m "Agregando nombre de usuario a index.html"
+		- git status
+
+		- si se intenta "git push", git marca que no existe rama remota para "rey-rom", que para crearla y pullearla en automático se intente: 
+			- git push --set-upstream origin rey-rom
+		- Al hacer "git tree" y "git branch -av", ya me aparece mi rama "rey-rom" asociada a "remotes/origin/rey-rom"
+
+- Con cada rama hacer un pull request.
+
+		Ésto se hace manualmente. Una vez actualizado mi repo remoto, me aparece buton de "Compare & Pull Request", tanto en mi repo remoto como el repo desde donde hice el fork. Seguir instrucciones para hacerlo manualmente.
+
+## Gestionar pull requests
+
+- Aceptar los pull requests que lleguen a los repositorios de tu organización.
+
+		Ésto se hace manualmente.
